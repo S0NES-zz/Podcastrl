@@ -6,7 +6,6 @@ import ptBR from "date-fns";
 import { api } from "../services/api";
 import { convertDurationToTimeString } from "../util/convertDurationToTimeString";
 import styles from "../styles/home.module.scss";
-
 type Episode = {
   id: string;
   title: string;
@@ -86,7 +85,9 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
                     />
                   </td>
                   <td>
-                    <a href="">{episode.title}</a>
+                    <Link href={`/episodes/${episode.id}`}>
+                      <a>{episode.title}</a>
+                    </Link>
                   </td>
                   <td>{episode.members}</td>
                   <td style={{ width: 100 }}>{episode.publishedAt}</td>
@@ -127,6 +128,7 @@ export const getStaticProps: GetStaticProps = async () => {
       durationAsString: convertDurationToTimeString(
         Number(episode.file.duration)
       ),
+      description: episode.description,
       url: episode.file.url,
     };
   });
