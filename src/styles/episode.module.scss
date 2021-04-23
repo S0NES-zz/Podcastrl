@@ -53,29 +53,27 @@
         margin-left: 1rem;
         padding-left: 1rem;
         position: relative;
-        
-          &::before {
-            content: " ";
-            width: 4px;
-            height: 4px;
-            border-radius: 2px;
-            background: #ddd;
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translate(-50%, -50%);
-          }
+
+        &::before {
+          content: " ";
+          width: 4px;
+          height: 4px;
+          border-radius: 2px;
+          background: #ddd;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
       }
     }
-
   }
-  .description{
-      margin-top: 2rem;
-      line-height: 1.675rem;
-      color: var(--gray-800);
-      
-      p{
-          margin: 1.5rem 0;
-      }
+  .description {
+    margin-top: 2rem;
+    line-height: 1.675rem;
+    color: var(--gray-800);
+    p {
+      margin: 1.5rem 0;
+    }
   }
 }
