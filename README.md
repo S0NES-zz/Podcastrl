@@ -10,7 +10,7 @@ Esse foi projeto foi feito na **Next Level Week #5** um evento gratuído feito p
 ## Índice
 
 - ⚙️ [Tecnologias utilizadas](#-tecnologias-utilizadas)
-- 💻 [Intruções para rodar](#-tecnologias-utilizadas)
+- 💻 [Intruções para rodar](#-instrucoes-para-rodar)
 
 ## ⚙️ Tenologías utilizadas
 
